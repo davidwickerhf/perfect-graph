@@ -1,13 +1,12 @@
 {
-  "name": "perfect-graph",
-  "version": "0.0.158",
-  "description": "",
+  "name": "perfect-graph-1.0",
+  "version": "1.0.0",
+  "description": "Fork of the original perfect-graph with new changes.",
   "main": "node_modules/expo/AppEntry.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name": "turgaysaba",
-    "email": "turgaysaba@outlook.com",
-    "url": "http://www.turgaysaba.com/"
+    "name": "cloud956",
+    "email": "pmlewandowski@gmail.com"
   },
   "license": "MIT",
   "keywords": [],
