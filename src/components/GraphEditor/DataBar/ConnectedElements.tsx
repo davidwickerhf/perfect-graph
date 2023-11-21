@@ -50,7 +50,7 @@ export const ConnectedElements = () => {
   }
   return (
     <>
-      <Collapsible defaultIsOpen>
+      <Collapsible>
         {({isOpen, onToggle}) => (
           <>
             <CollapsibleTitle onClick={onToggle}>{`Connected ${isNode ? 'Edges' : 'Nodes'}`}</CollapsibleTitle>
@@ -79,7 +79,7 @@ export const ConnectedElements = () => {
         )}
       </Collapsible>
       {isNode && (
-        <Collapsible defaultIsOpen>
+        <Collapsible>
           {({isOpen, onToggle}) => (
             <>
               <CollapsibleTitle onClick={onToggle}>{'Connected Nodes'}</CollapsibleTitle>
