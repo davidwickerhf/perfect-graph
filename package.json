@@ -1,6 +1,6 @@
 {
-  "name": "perfect-graph-1.0",
-  "version": "1.0.0",
+  "name": "perfect-graph-new",
+  "version": "1.0.1",
   "description": "Fork of the original perfect-graph with new changes.",
   "main": "node_modules/expo/AppEntry.js",
   "types": "dist/index.d.ts",
