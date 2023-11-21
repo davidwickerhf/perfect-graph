@@ -70,6 +70,7 @@ export const SortableList = <T extends {id: string}>(props: SortableListProps<T>
                 {
                   // @ts-ignore
                   (provided, snapshot, rubric) =>
+                    // @ts-ignore
                     renderItem({
                       item,
                       index,
