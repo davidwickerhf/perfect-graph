@@ -118,7 +118,7 @@ export const DataBar = (props: DataBarProps) => {
         >
           {HeaderComponent && <HeaderComponent />}
           {item && (
-            <Collapsible>
+            <Collapsible defaultIsOpen>
               {({isOpen, onToggle}) => (
                 <>
                   <CollapsibleTitle
