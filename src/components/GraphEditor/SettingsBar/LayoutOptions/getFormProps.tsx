@@ -1,11 +1,9 @@
 import {LAYOUT_NAMES} from '@constants'
 import {Card, CardActionArea, CardContent, CardMedia, MenuItem, TextField, Typography} from '@mui/material'
-import {utils, WidgetProps} from '@rjsf/core'
+import {WidgetProps, asNumber, guessType} from '@rjsf/utils'
 import {useDisclosure, View} from 'colay-ui'
 import React from 'react'
 import {LAYOUT_INFO} from './layoutInfo'
-
-const {asNumber, guessType} = utils
 
 const nums = new Set(['number', 'integer'])
 
