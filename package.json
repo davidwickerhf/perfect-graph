@@ -19,7 +19,7 @@
     "build": "rm -rf dist && yarn build:js && yarn build:types",
     "build:js": "babel src -d dist --config-file ./babel.config.js --extensions \".js,.jsx,.ts,.tsx\" --copy-files",
     "fire": "yarn build && yarn version --patch && cp ./package.json ./dist || copy ./package.json ./dist && cd dist && npm publish",
-    "fire:beta": "rm -rf dist || rd /s /q dist && yarn build:js && yarn version --patch && cp ./package.json ./dist  || copy ./package.json ./dist && cd dist && npm publish --tag beta",
+    "fire:beta": "rm -rf dist || rd /s /q dist && yarn build:js && yarn version --patch && cp ./package.json ./dist || copy ./package.json ./dist && cd dist && npm publish --tag beta",
     "auth": "cd dist && npm login --always-auth && cd ..",
     "generate:docs": "typedoc --excludeExternals --out /Users/turgaysaba/Desktop/projects/perfect-graph-docs/docs/type src/**/**/*",
     "fmt": "prettier \"**/*.{ts,tsx,js,cjs,json,md,html}\" --ignore-path .gitignore --write"
@@ -43,6 +43,7 @@
     "@rjsf/material-ui": "5.14.2",
     "@rjsf/semantic-ui": "5.14.2",
     "@rjsf/utils": "5.14.2",
+    "@rjsf/validator-ajv8": "5.14.2",
     "@types/color": "3.0.2",
     "@types/cytoscape": "3.14.11",
     "@types/jsonld": "1.5.1",
