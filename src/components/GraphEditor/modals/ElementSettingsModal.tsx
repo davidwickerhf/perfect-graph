@@ -22,7 +22,7 @@ import {useImmer} from 'colay-ui/hooks/useImmer'
 import * as R from 'colay/ramda'
 import React from 'react'
 import {FormProps} from '@type'
-
+import validator from '@rjsf/validator-ajv8'
 type SidebarItemData =
   | {
       label?: string
@@ -151,6 +151,7 @@ export const ElementSettingsModal = (props: PreferencesModalProps) => {
                     height: '100%'
                   }}
                   schema={R.omit(['title'])(form.schema)}
+                  validator={validator}
                   onSubmit={({formData}) => {
                     onEvent({
                       type: EVENT.ELEMENT_SETTINGS_FORM_SUBMIT,

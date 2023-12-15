@@ -24,7 +24,7 @@ import {GraphConfig, FormProps} from '@type'
 import {useImmer} from 'colay-ui/hooks/useImmer'
 import * as R from 'colay/ramda'
 import React from 'react'
-
+import validator from '@rjsf/validator-ajv8'
 type SidebarItemData =
   | {
       label?: string
@@ -206,6 +206,7 @@ export const PreferencesModal = (props: PreferencesModalProps) => {
                     schema={form.schema}
                     onSubmit={onSubmitCallback}
                     onClear={onClearCallback}
+                    validator={validator}
                   >
                     {form.children ?? (
                       <Button type="submit" fullWidth variant="contained">

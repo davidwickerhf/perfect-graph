@@ -32,7 +32,7 @@ import {useImmer} from 'colay-ui/hooks/useImmer'
 import * as R from 'colay/ramda'
 import React from 'react'
 import {CreateClusterByAlgorithm} from './CreateClusterByAlgorithm'
-
+import validator from '@rjsf/validator-ajv8'
 export type ClusterTableProps = CollapsibleSectionCommon & {
   createClusterForm?: FormProps<any>
 }
@@ -341,6 +341,7 @@ export const ClusterTable = (props: ClusterTableProps) => {
                       })
                     }}
                     {...createClusterForm}
+                    validator={validator}
                   />
                 </TabPanel>
                 <TabPanel value={state.currentTab} index={2}>

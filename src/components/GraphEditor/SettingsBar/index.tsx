@@ -15,7 +15,7 @@ import {ClusterTable} from './ClusterTable'
 import {EventHistoryTable} from './EventHistoryTable'
 import {LayoutOptions} from './LayoutOptions'
 import {PlaylistTable} from './PlaylistTable'
-
+import validator from '@rjsf/validator-ajv8'
 type DefaultsOption = {
   visible?: boolean
 }
@@ -184,6 +184,7 @@ const SettingsBarElement = (props: SettingsBarProps) => {
                           <Form
                             {...form}
                             schema={R.omit(['title'])(form.schema)}
+                            validator = {validator}
                             onSubmit={e =>
                               onEvent({
                                 type: EVENT.SETTINGS_FORM_CHANGED,

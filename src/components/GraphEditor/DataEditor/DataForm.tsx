@@ -4,7 +4,7 @@ import Form from '@rjsf/semantic-ui'
 import {Box, BoxProps} from '@mui/material'
 import {EVENT} from '@constants'
 import {OnEventLite, DataItem} from '@type'
-
+import validator from '@rjsf/validator-ajv8'
 export type DataEditorProps = {
   style?: BoxProps['style']
   data: DataItem[]
@@ -93,6 +93,7 @@ export const DataForm = (props: DataEditorProps) => {
             }
           }
         }}
+        validator={validator}
       />
     </Box>
   )

@@ -5,6 +5,7 @@ import {Form} from '@components/Form'
 import * as R from 'colay/ramda'
 import {useGraphEditor} from '@hooks'
 import {EVENT} from '@constants'
+import validator from '@rjsf/validator-ajv8'
 // import {
 //   View,
 // } from 'colay-ui'
@@ -52,7 +53,7 @@ export const ModalComponent = (props: ModalComponentProps) => {
             padding: 2
           }}
         >
-          <Form {...form} schema={R.omit(['title'])(form.schema)}>
+          <Form {...form} schema={R.omit(['title'])(form.schema)} validator={ validator}>
             {form.children ?? (
               <Button type="submit" fullWidth variant="contained">
                 Apply

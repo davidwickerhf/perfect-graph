@@ -5,7 +5,7 @@ import {OnEventLite, CollapsibleSectionCommon} from '@type'
 import * as R from 'colay/ramda'
 import React from 'react'
 import {getFormProps} from './getFormProps'
-
+import validator from '@rjsf/validator-ajv8'
 type LayoutOptionsValue = {
   name?: string
   animationDuration?: number
@@ -59,6 +59,7 @@ export const LayoutOptions = (props: LayoutOptionsProps) => {
                   maxSimulationTime: layout.maxSimulationTime
                 }}
                 onSubmit={onSubmitCallback}
+                validator={validator}
               />
             </CollapsibleContainer>
           )}

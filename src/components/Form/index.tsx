@@ -3,7 +3,7 @@ import {FormProps as FormPropsDefault} from '@rjsf/core'
 import FormDefault from '@rjsf/material-ui'
 import {View} from 'colay-ui'
 import React from 'react'
-
+import validator from '@rjsf/validator-ajv8'
 export type FormProps<T> = FormPropsDefault<T> & {
   onClear?: (params: {formData: any}) => void
 }
@@ -11,7 +11,8 @@ export type FormProps<T> = FormPropsDefault<T> & {
 export const Form = <T,>(props: FormProps<T>) => {
   const {
     // onClear: onClearCallback,
-    formData: formDataValue
+    formData: formDataValue,
+    validator: validator
   } = props
   const [defaultValue] = React.useState(formDataValue)
   const [, refresh] = React.useState(0)

@@ -6,7 +6,7 @@ import {Form} from '@components/Form'
 import {View} from 'colay-ui'
 import {useImmer} from 'colay-ui/hooks/useImmer'
 import React from 'react'
-
+import validator from '@rjsf/validator-ajv8'
 export type CreateClusterByAlgorithmProps = {
   onSubmit: () => void
 }
@@ -64,6 +64,7 @@ export const CreateClusterByAlgorithm = (props: CreateClusterByAlgorithmProps) =
           })
         }}
         schema={Clusters[state.selectedClusterName].configSchema}
+        validator = {validator}
       />
     </View>
   )
