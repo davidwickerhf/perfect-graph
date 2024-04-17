@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # See documentation for possible values
+    directory: "/"  # Location of package manifests
+    schedule:
+      interval: "daily"  # Options: "daily", "weekly", "monthly"
+    open-pull-requests-limit: 10  # Maximum number of open pull requests Dependabot should have at any time
+    ignore:
+      - dependency-name: "express"  # Example: ignoring updates to the express package
+        versions: ["4.x.x"]  # Ignore specific versions or version patterns
+    commit-message:
+      prefix: "fix"  # Prefix for commit messages, could be 'fix', 'chore', 'feat', etc.
+      include: "scope"  # Includes the scope in commit messages, where the scope is the package being updated

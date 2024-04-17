@@ -37,13 +37,13 @@ export default () => {
   return (
     <ThemeProvider theme={theme}>
       <View
-        ref={containerRef}
+        // ref={containerRef}
         style={{
           width: '100%',
           height: '100%'
         }}
       >
-        {initialized && <App dispatch={() => {}} {...{width, height}} />}
+        {initialized && <App />}
       </View>
     </ThemeProvider>
   )
