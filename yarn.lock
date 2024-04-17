@@ -4313,6 +4313,16 @@
     lodash-es "^4.17.21"
     react-is "^18.2.0"
 
+"@rjsf/validator-ajv8@5.14.2":
+  version "5.14.2"
+  resolved "https://registry.yarnpkg.com/@rjsf/validator-ajv8/-/validator-ajv8-5.14.2.tgz#b26d602002bb504dad8d6779b4afaf7494578bca"
+  integrity sha512-779A/NprOtNDCbL8tGbsBxesG1vbdE1IWOdFkTcMkUToTHcbeUw20RhowicOJBmnSTpZSO+2dxWmhXgjhlIHTw==
+  dependencies:
+    ajv "^8.12.0"
+    ajv-formats "^2.1.1"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.1.tgz#a21117b19ee9be70c379ec1877537ef2e1c63301"
@@ -5631,10 +5641,10 @@ accepts@^1.3.7, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-ace-builds@^1.4.13:
-  version "1.4.13"
-  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.4.13.tgz#186f42d3849ebcc6a48b93088a058489897514c1"
-  integrity sha512-SOLzdaQkY6ecPKYRDDg+MY1WoGgXA34cIvYJNNoBMGGUswHmlauU2Hy0UL96vW0Fs/LgFbMUjD+6vqzWTldIYQ==
+ace-builds@^1.32.7:
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.33.0.tgz#3b6fb993a4b1d3f2b5923aecded098e13e6527d8"
+  integrity sha512-PDvytkZNvAfuh+PaP5Oy3l3sBGd7xMk4NsB+4w/w1e3gjBqEOGeJwcX+wF/SB6mLtT3VfJLrhDNPT3eaCjtR3w==
 
 acorn-jsx@^5.1.0, acorn-jsx@^5.3.1:
   version "5.3.2"
@@ -5707,6 +5717,13 @@ ajv-errors@^1.0.0:
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
   integrity sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ==
 
+ajv-formats@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ajv-formats/-/ajv-formats-2.1.1.tgz#6e669400659eb74973bbf2e33327180a0996b520"
+  integrity sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==
+  dependencies:
+    ajv "^8.0.0"
+
 ajv-keywords@^3.1.0, ajv-keywords@^3.4.1, ajv-keywords@^3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
@@ -5720,6 +5737,16 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4, ajv@^6.12.5, ajv
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
+ajv@^8.0.0, ajv@^8.12.0:
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.12.0.tgz#d1a0527323e22f53562c567c00991577dfbe19d1"
+  integrity sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
 alphanum-sort@^1.0.0:
@@ -8020,9 +8047,9 @@ crypto-browserify@^3.11.0:
     randomfill "^1.0.3"
 
 crypto-js@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
-  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
 crypto-random-string@^1.0.0:
   version "1.0.0"
@@ -11855,10 +11882,10 @@ jimp-compact@0.16.1:
   resolved "https://registry.yarnpkg.com/jimp-compact/-/jimp-compact-0.16.1.tgz#9582aea06548a2c1e04dd148d7c3ab92075aefa3"
   integrity sha512-dZ6Ra7u1G8c4Letq/B5EzAxj4tLFHL+cGtdpR+PVm4yzPDj+lCk+AbivWt1eOM+ikzkowtyV7qSqX6qr3t71Ww==
 
-jmespath@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
-  integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
+jmespath@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.16.0.tgz#b15b0a85dfd4d930d43e69ed605943c802785076"
+  integrity sha512-9FzQjJ7MATs1tSpnco1K6ayiYE3figslrXA72G2HQ/n76RzvYlofyi5QM+iX4YRs/pu3yzxlVQSST23+dMDknw==
 
 joi@^17.2.1:
   version "17.4.2"
@@ -11982,6 +12009,11 @@ json-schema-traverse@^0.4.1:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
   integrity sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
 
+json-schema-traverse@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
+  integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
+
 json-schema@0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
@@ -12026,27 +12058,27 @@ jsonc-parser@^3.0.0:
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
   integrity sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==
 
-jsoneditor-react@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/jsoneditor-react/-/jsoneditor-react-3.1.1.tgz#30c4c0a7c38b2bb1c1cd030c38b7f2990ffe7ffe"
-  integrity sha512-7cl2PXfqoOFpGX9mO7d445EpGJGUlk8/AwWgKZiOMh3kPHBduSo6cIIUQrWVqX3pDBjM7z+map+rD1RXyl6FcA==
+jsoneditor-react@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/jsoneditor-react/-/jsoneditor-react-3.1.2.tgz#bc36356ac5ecb0d8f88d49a5ccbeecdd7f996164"
+  integrity sha512-XqU8BMdIhrlS5HUnn7rGhgZw315bdJGQrf6NG5UH40FSw2xNirQrxnM05aeAplHkp8FNkzN2WX0tfvEWdl2UUA==
   dependencies:
     prop-types "^15.7.2"
 
-jsoneditor@9.5.7:
-  version "9.5.7"
-  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-9.5.7.tgz#b74d0c2cf64febe102b1b0a91d693f48d1f90917"
-  integrity sha512-RWI1YqIhb2XzLcnSHMta7LROItQg49FhSd7KNPWr81HyCj2pc0m25no4BpzygmxW9320r9PnYKJwZsqL2PpdrQ==
+jsoneditor@10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-10.0.2.tgz#257eb9287d69276d158174dd8cb252aa54bebeec"
+  integrity sha512-tElB3FDSdHui7EgsXmQPpMrxdyRfNRge0BtbkwlTmr4968Yr4buvtpaTZqc0NOdG1lJgb9Bl7RuvP+5Sj8IN4A==
   dependencies:
-    ace-builds "^1.4.13"
+    ace-builds "^1.32.7"
     ajv "^6.12.6"
     javascript-natural-sort "^0.7.1"
-    jmespath "^0.15.0"
+    jmespath "^0.16.0"
     json-source-map "^0.6.1"
-    jsonrepair "^2.2.1"
+    jsonrepair "^3.6.0"
     mobius1-selectr "^2.4.13"
     picomodal "^3.0.0"
-    vanilla-picker "^2.12.1"
+    vanilla-picker "^2.12.2"
 
 jsonfile@^2.1.0:
   version "2.4.0"
@@ -12103,10 +12135,10 @@ jsonpointer@^5.0.1:
   resolved "https://registry.yarnpkg.com/jsonpointer/-/jsonpointer-5.0.1.tgz#2110e0af0900fd37467b5907ecd13a7884a1b559"
   integrity sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==
 
-jsonrepair@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/jsonrepair/-/jsonrepair-2.2.1.tgz#7c6257c36550a310150c41ab7d5d4cab71828456"
-  integrity sha512-o9Je8TceILo872uQC9fIBJm957j1Io7z8Ca1iWIqY6S5S65HGE9XN7XEEw7+tUviB9Vq4sygV89MVTxl+rhZyg==
+jsonrepair@^3.6.0:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/jsonrepair/-/jsonrepair-3.6.1.tgz#a02d9c4e70100bd986b5c916303539d8e9a59c82"
+  integrity sha512-3yMISA+ma94/Sr8aDmB6mki6dKRoad4qMjddL+0gdymCnhjWPhzbNCyvx7ji7QroeicTSQW0lm77SC8Ecl/k3w==
 
 jsprim@^1.2.2:
   version "1.4.1"
@@ -18117,10 +18149,10 @@ validate.io-number@^1.0.3:
   resolved "https://registry.yarnpkg.com/validate.io-number/-/validate.io-number-1.0.3.tgz#f63ffeda248bf28a67a8d48e0e3b461a1665baf8"
   integrity sha1-9j/+2iSL8opnqNSODjtGGhZluvg=
 
-vanilla-picker@^2.12.1:
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/vanilla-picker/-/vanilla-picker-2.12.1.tgz#6e619eecf553891b8d2d042b745a23c91f19f34c"
-  integrity sha512-2qrEP9VYylKXbyzXKsbu2dferBTvqnlsr29XjHwFE+/MEp0VNj6oEUESLDtKZ7DWzGdSv1x/+ujqFZF+KsO3cg==
+vanilla-picker@^2.12.2:
+  version "2.12.3"
+  resolved "https://registry.yarnpkg.com/vanilla-picker/-/vanilla-picker-2.12.3.tgz#1cc47b641a2b9c9afc5ac3a9a02febace0f1b17a"
+  integrity sha512-qVkT1E7yMbUsB2mmJNFmaXMWE2hF8ffqzMMwe9zdAikd8u2VfnsVY2HQcOUi2F38bgbxzlJBEdS1UUhOXdF9GQ==
   dependencies:
     "@sphinxxxx/color-conversion" "^2.2.2"
 
