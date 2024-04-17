@@ -1,0 +1,11 @@
+{
+    "@rjsf/core": "^5.18.2",
+    "@rjsf/material-ui": "^5.18.2",
+    "@rjsf/semantic-ui": "^5.18.2",
+    "@rjsf/utils": "^5.18.2",
+    "@rjsf/validator-ajv8": "^5.18.2",
+    "pixi-viewport": "^5.1.0",
+    "jsoneditor-react": "3.1.2",
+    "@types/react-beautiful-dnd": "^13.1.8",
+    "react-beautiful-dnd": "^13.1.1"
+}
